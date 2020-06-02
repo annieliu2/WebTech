@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightgray;
+            width: 60%;
+            padding: 30px;
+            color: darkblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>In-Class Exercise 09 - HTML Form</h1>
+   <form>
+    <label for="lastname">Last Name:</label>
+       <input 
+       type="text"
+       id="lastname"
+       name="lastname"
+       maxlength="100"
+       placeholder="Last name"
+    >
+   <div> <label for="firstname">First Name:</label>
+        <input 
+        type="text"
+        id="firstname"
+        name="firstname"
+        maxlength="100"
+        placeholder="First name"
+    ></div>
+        <label for="email">Email:</label>
+        <input 
+        type="text"
+        id="email"
+        name="email"
+        maxlength="100"
+        placeholder="Email Address"
+        >
+        <div>
+            Gender:
+            <label>Male
+            <input type="radio" name="gender" value="male" />
+            </label>
+            <label>Female
+            <input type="radio" name="gender" value="female" />
+            </label>
+            </div>
+        <div>My favorite topics are:</div>
+            <div>
+            <input type="checkbox" id="basichtml" name="topics" value="basichtml" />
+            <label for="basichtml">Basic HTML</label>
+            </div>
+            <div>
+            <input type="checkbox" id="css" name="topics" value="css"/>
+            <label for="css">CSS</label>
+            </div>
+            <div>
+            <input type="checkbox" id="tables" name="topics" value="tables"
+            checked />
+            <label for="tables">Tables</label>
+            </div>
+    <div>
+        <label for="grade-select">Which grade do you expect to receive?</label>
+        <select name="grade" id="grade-select">
+        <option value="">---</option>
+        <option value="A">A</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="B-">B-</option>
+        <option value="C+">C+</option>
+        </select>
+    </div>
+       <div>
+           <label for="comments">Leave a Reply:</label>
+        <div>
+            <textarea name="comments" id="comments" cols="25" rows="5" placeholder="Enter your comment here..."></textarea>
+        </div>
+       </div>
+   <button type="submit" name="submit-button"><img src="images/mailbox.png" height="30" alt="submit button"/>
+   <button type="reset" name="reset-button"><img src="images/reset.png" height="30" alt="reset button"/>
+</form>
+</body>
+</html>
