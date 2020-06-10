@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex14</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      img {
+        border: 10px ridge gold;
+        display: block;
+      }
+      div, img{
+        width: 500px;
+        margin: 30px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Changing image using user input</h1>
+    <img id="click" src="" alt="Click here to choose the image" title="" />
+
+    <div>
+      Enter the last name of your favoriate Celtics player
+      <ul>
+        <li>Jaylen Brown</li>
+        <li>Tacko Fall</li>
+        <li>Jayson Tatum</li>
+        <li>Kemba Walker</li>
+      </ul>
+    </div>
+    <img id="img1" src="" alt="" width="200">
+    <img id="img2" src="" alt="" width="200">
+    <img id="img3" src="" alt="" width="200">
+    <img id="img4" src="" alt="" width="200">
+    <script>
+        document.getElementById("click").onclick = function()
+        {ask()}
+        function ask(){
+            let userInput = prompt("Who is your favorite player?");
+            let msg = document.getElementById("message");
+            let img1 = document.getElementById("img1");
+            if (userInput === "brown") {
+                document.getElementById("img1").src="images/jaylen-brown.png";
+            } else if (userInput === "fall") {
+                document.getElementById("img2").src="images/tacko-fall.png";
+            } else if (userInput === "tatum") {
+                document.getElementById("img3").src="images/jayson-tatum.png";
+            } else if (userInput === "walker") {
+                document.getElementById("img4").src="images/kemba-walker.png";
+            } else {
+                msg.innerText = "The input is incorrect.";
+                image1.src = "";
+            }
+        }
+    </script>
+  </body>
+</html>

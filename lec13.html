@@ -8,12 +8,12 @@
   <body>
     <h1>Manipulating Styles and Images</h1>
     <div>
-      <img src="images/tiger1.jpg" alt="Tiger 1" title="Tiger is walking" width="400" />
-      <img src="images/elephant.jpg" alt="elephant" title="elephant is walking" width="400">
+      <img src="images/tiger1.jpg" alt="Tiger 1" title="Tiger is walking" width="400" id="tiger1" />
+      <img src="images/elephant.jpg" alt="elephant" title="elephant is walking" width="400" id="elephant1">
     </div>
 
     <script>
-        function enlarge() {
+     function enlarge(imageID) {
         /* Pesudo-code:
         1. get the image
         select the element
@@ -24,7 +24,7 @@
         -w = w*1.5
         4. assign w back to width of the image
         */
-       let x = document.querySelector("img");
+       let x = document.getElementById(imageID);
        let w = x.width;
        w = w * 1.5;
        x.width = w;
@@ -32,20 +32,28 @@
        let h = document.querySelector("h1");
        h.innerText = "Tiger";
 
-     console.log("Done!");
+       console.log("Done!");
         }
-        document.querySelector('img').onmouseover = function() {
-            enlarge();
+       document.querySelector('tiger1').onmouseover = function() {
+            enlarge("tiger1");
         }
-        function reduce (){
-            let x = document.querySelector("img");
+        document.getElementById("elephant2").onmouseover = function () {
+          enlarge("elephant2");
+        }
+     function reduce (imageID){
+            let x = document.getElementById(imageID);
        let w = x.width;
        w = w / 1.5;
        x.width = w;
+       document.querySelector("h1").innerText = 
+       "Manipulating Styles and Images";
         }
-        document.querySelector('img').onmouseout = function() {
-            reduce();
+        document.querySelector('tiger1').onmouseout = function() {
+            reduce("tiger1");
         }
+        document.querySelector('elephant1').onmouseout = function() {
+              reduce("elephant1");}
+        
     </script>
   </body>
 </html>
