@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex13</title>
+  </head>
+  <body>
+    <h1>Manipulating Styles and Images</h1>
+    <div>
+      <img src="images/tiger1.jpg" alt="Tiger 1" title="Tiger is walking" width="400" />
+      <img src="images/elephant.jpg" alt="elephant" title="elephant is walking" width="400">
+    </div>
+
+    <script>
+        function enlarge() {
+        /* Pesudo-code:
+        1. get the image
+        select the element
+        assign the element to a variable
+        2. get the width of the image
+        assign th ewidth to a variable, w
+        3. increase the variable
+        -w = w*1.5
+        4. assign w back to width of the image
+        */
+       let x = document.querySelector("img");
+       let w = x.width;
+       w = w * 1.5;
+       x.width = w;
+
+       let h = document.querySelector("h1");
+       h.innerText = "Tiger";
+
+     console.log("Done!");
+        }
+        document.querySelector('img').onmouseover = function() {
+            enlarge();
+        }
+        function reduce (){
+            let x = document.querySelector("img");
+       let w = x.width;
+       w = w / 1.5;
+       x.width = w;
+        }
+        document.querySelector('img').onmouseout = function() {
+            reduce();
+        }
+    </script>
+  </body>
+</html>
