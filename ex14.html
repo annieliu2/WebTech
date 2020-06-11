@@ -32,6 +32,7 @@
       </ul>
     </div>
     <img id="img1" src="" alt="" width="200">
+    
     <script>
         document.getElementById("click").onclick = function()
         {ask()}
@@ -48,8 +49,7 @@
             } else if (userInput === "walker") {
                 document.getElementById("img1").src="images/kemba-walker.png";
             } else {
-                msg.innerText = "The input is incorrect.";
-                img1.src = "";
+               alert("wrong input");
             }
         }
     </script>
