@@ -32,9 +32,6 @@
       </ul>
     </div>
     <img id="img1" src="" alt="" width="200">
-    <img id="img2" src="" alt="" width="200">
-    <img id="img3" src="" alt="" width="200">
-    <img id="img4" src="" alt="" width="200">
     <script>
         document.getElementById("click").onclick = function()
         {ask()}
@@ -45,14 +42,14 @@
             if (userInput === "brown") {
                 document.getElementById("img1").src="images/jaylen-brown.png";
             } else if (userInput === "fall") {
-                document.getElementById("img2").src="images/tacko-fall.png";
+                document.getElementById("img1").src="images/tacko-fall.png";
             } else if (userInput === "tatum") {
-                document.getElementById("img3").src="images/jayson-tatum.png";
+                document.getElementById("img1").src="images/jayson-tatum.png";
             } else if (userInput === "walker") {
-                document.getElementById("img4").src="images/kemba-walker.png";
+                document.getElementById("img1").src="images/kemba-walker.png";
             } else {
                 msg.innerText = "The input is incorrect.";
-                image1.src = "";
+                img1.src = "";
             }
         }
     </script>
