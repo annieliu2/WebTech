@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            font-family: arial;
+            border: 2px solid lightgray;
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+        }
+        td,tr{
+            border: 2px solid lightgray;
+            text-align: center;
+        }
+        caption{
+            font-size: 2em;
+        }
+        button{
+            background:linear-gradient(#51a9ee,#147bcd);
+        }
+        a{
+            color: white;
+        }
+        .one{width: 15%;}
+        .two{width: 30%;}
+        .three{width: 10%;}
+        .crossout{text-decoration: line-through;}
+        .sale{color: red;font-weight: bold;}
+        
+            
+       
+    </style>
+</head>
+<body>
+    <table>
+        <caption>AirPods</caption>
+        <tr >
+            <th class="one">AirPods Pro</th>
+            <td class="two"><img src="images/airpods-pro.jpg" alt="airpodspro" width="200" height="200"></td>
+            <td class="two">AirPods Pro</td>
+            <td class="three">$249.00</td>
+            <td class="button"><button><a href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro">Buy</a></button></td>
+        </tr>
+        <tr>
+            <th class="one" rowspan="2">AirPods</th>
+            <td class="two" rowspan="2"><img src="images/airpods.jpg" alt="airpods" width="200" height="200"></td>
+                <td class="two">AirPods with Wireless Charging Case</td>
+                <td class="three"> $199.00</td>
+                <td class="button"><button><a href="https://www.apple.com/shop/product/MRXJ2/airpods-with-wireless-charging-case">Buy</a></button></td>
+        </tr>
+        <tr>
+                <td class="two">AirPods with Charging Case</td>
+                <td class="three">
+                    <div class="crossout">$159.00</div>
+                    <div class="sale">$129.00</div></td>
+                <td class="button"><button><a href="https://www.apple.com/shop/product/MV7N2/airpods-with-charging-case">Buy</a></button></td>
+        </tr>
+
+    </table>
+   
+</body>
+</html>
