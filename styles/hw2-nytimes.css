@@ -1,0 +1,112 @@
+.section{
+    height: 16px;
+    width: 16px;
+    padding: 8px 9px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: sub;
+}
+.css-1fe7a5q{
+    height: 16px;
+    width: 16px;
+    padding: 8px 9px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: sub;
+}
+.center{
+    display: inline;
+    position: absolute;
+    left: 45%;
+}
+.language a{
+    font-family: "Libre Franklin";
+    display: inline;
+    text-align: center;
+    font-size: 10px;
+    padding: 7px 8px 6px;
+}
+.language:hover {
+    background-color: #f7f7f7;
+}
+.button{
+    font-family: "Libre Franklin";
+    vertical-align: middle;
+    background-color: rgb(86, 123, 149);
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(50, 104, 145);
+    border-image: initial;
+    padding: 11px 12px 8px;
+    float: right;
+    margin: 5px;
+    white-space: nowrap;
+    transition: all 0.6s ease 0s;
+}
+.mid-center{
+    width: 30%;
+    left: 35%;
+    display: inline;
+    vertical-align: baseline;
+    position: absolute;
+}
+.todays-date{
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: auto;
+    color: #121212;
+    font-family: "Libre Franklin";
+    vertical-align: baseline;
+}
+time{
+    vertical-align: baseline;
+}
+.todayspaper{
+    width: auto;
+    vertical-align: baseline;
+    color: #121212;
+    font-family: "Libre Franklin";
+    text-decoration: none;
+    display: inline;
+    padding: 6px 4px 4px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.todayspaper:hover{
+    background-color: #f7f7f7;
+}
+.nav-bar{
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #000000;
+}
+li{
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 500;
+}
+.link{
+    vertical-align: middle;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Libre Franklin";
+}
+a:hover{
+    background-color: #f7f7f7;
+}
+
