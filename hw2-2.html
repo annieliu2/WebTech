@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        fieldset{
+            border: solid lightgray;
+        }
+        legend{
+            font-weight: bold;
+        }
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        input[type=checkbox]{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Customer Feedback</h1>
+    <form>
+        <fieldset><legend>Your Information</legend>
+        <label for="name">Name:</label>
+       <input 
+       type="text"
+       id="name"
+       name="name"
+       maxlength="100"
+       placeholder="Enter your name here"
+    ><div> 
+        <label for="email">Email:</label>
+        <input 
+        type="text"
+        id="email"
+        name="email"
+        maxlength="100"
+        placeholder="Enter your email here"
+    ></div></fieldset>
+        <fieldset>
+            <legend>Your Review</legend>
+            <label for="apple product">What Apple product did you purchase?</label>
+        <select name="product" id="apple product">
+        <option value="">---</option>
+        <option value="A">AirPods Pro</option>
+        <option value="B">AirPods with Wireless Charging Case</option>
+        <option value="C">AirPods with Charging Case</option>
+        </select>
+        <div>
+        What do you think of this product?
+        </div>
+        <div>
+            <label>Great
+            <input type="radio" name="opinion" value="great" />
+            </label>
+            <label>Awesome
+            <input type="radio" name="opinion" value="awesome" />
+            </label>
+            <label>Good
+            <input type="radio" name="opinion" value="good">
+            </label>
+        </div>
+        <div>
+            <label for="comments">Comments:</label>
+        </div>
+        <div>
+            <textarea name="comments" id="comments" cols="55" rows="5"></textarea>
+        </div>
+       
+       <label class="check">
+           <input type="checkbox" checked="checked">Sign me up for email updates
+       </label>
+       <div>
+           <button type="submit" name="submit-button">Submit</button>
+           <button type="reset" name="reset-button">Reset</button>
+        </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
