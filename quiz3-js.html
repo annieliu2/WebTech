@@ -21,7 +21,7 @@
     </style>
   </head>
   <body>
-    <h1 id="header">Kembar Walker</h1>
+    <h1>Kembar Walker</h1>
     <p>
       Use internal JavaScript to implement the features below:
     </p>
@@ -38,18 +38,26 @@
       <img alt="KembarWalker" height="100" src="images/kemba-walker.png" />
       <button>I Want to Be Tall!</button>
     </div>
-
-    </div>
     <script>
-        function center() {
-            document.getElementById("h1").style.textAligh="center";
-        }
-        document.querySelector("h1").onclick = center();
-        function changeimg() {
-            document.getElementById("img")
+      const heading = document.querySelector("h1");
 
-        }
-        document.querySelector("button").onclick = changeimg();
+      function centerHeading() {
+        heading.style.textAlign = "center";
+      }
+
+      heading.onclick = centerHeading;
+      // document.querySelector("h1").onclick = centerHeading;
+    
+
+      function change() {
+        const celticImage = document.querySelector("img");
+        celticImage.src = "images/tacko-fall.png";
+        heading.innerText = "Tacko Fall";
+      }
+
+      document.querySelector("button").onclick = function () {
+        change();
+      };
     </script>
   </body>
 </html>
