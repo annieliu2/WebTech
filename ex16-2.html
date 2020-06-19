@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+<form action="">
+    <input
+      type="text"
+      id="fahrenheit"
+      placeholder="Fahrenheit"
+      name="fah"
+      value=""
+    />
+
+    <input type="text" id="celsius" placeholder="Celsius" name="cel" value="" />
+
+    <button id="convert">Convert</button>
+    <button id="clear">Reset</button>
+</form>
+    <script>
+      document.getElementById("convert").onclick = converttemp;
+      document.getElementById("clear").onclick = clearForm;
+
+      function converttemp() {
+        let fahrenheit = document.getElementById("fahrenheit").value;
+        let celsius = document.getElementById("celsius").value;
+
+        if (fahrenheit != "") {
+          celsius = (parseFloat(fahrenheit) - 32) / 1.8;
+        } else {
+          fahrenheit = parseFloat(celsius) * 1.8 + 32;
+        }
+        if (fahrenheit.length === 0 || celsius.length === 0) {
+          alert("please enter a number for either fahrenheit or celsius");
+        } else if (isNaN(fahrenheit)) {
+          alert("please enter a number for fahrenheit");
+        } else if (isNaN(celsius)) {
+          alert("please enter a number for celsius");
+        }
+
+        document.getElementById("fahrenheit").value = parseFloat(fahrenheit);
+        document.getElementById("celsius").value = parseFloat(celsius);
+      }
+
+      function clearForm() {
+        document.getElementById("fahrenheit").value = "";
+        document.getElementById("celsius").value = "";
+      }
+    </script>
+  </body>
+</html>
