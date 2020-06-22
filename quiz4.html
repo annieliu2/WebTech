@@ -46,35 +46,36 @@
     </ol>
 
     <div>
-      <img alt="jaylen brown" src="images/jaylen-brown.png" id="img1" class= "img1"/>
-      <img alt="tacko fall" src="images/tacko-fall.png"class= "img2"/>
-      <img alt="tiger" src="images/tiger1.jpg"  class="img3" />
+      <img
+        alt="jaylen brown"
+        src="images/jaylen-brown.png"
+        id="img1"
+        class="img1"
+      />
+      <img alt="tacko fall" src="images/tacko-fall.png" class="img2" />
+      <img alt="tiger" src="images/tiger1.jpg" class="img3" />
     </div>
     <script>
-        // first click change heading to jaylen brown
-        //chnage font color ot brown
-        // make second picture disappear
-        const heading = document.querySelector("h1");
-        function changeheading() {
-            heading.innerHTML = "JaylenBrown";
-            const elementHide = document.getElementsByClassName("img2");
-        }
-        function secondpic(){
-            heading.innerHTML = "Tacko Fall";
-            const elementHide = document.getElementsByClassName("img1");
-        }
-        function thirdpic() {
-            heading.innerHTML = "Let's Go, Celtics!";
-            const elementShow = document.getElementsByClassName("img1");
-            const elementShow = document.getElementsByClassName("img2");
-        }
-      ("img1").click.changeheading() 
-      ("img2").click.secondpic()
-      ("img3")
-    
-      
-
-    
+      // first click change heading to jaylen brown
+      //chnage font color ot brown
+      // make second picture disappear
+      const heading = document.querySelector("h1");
+      function changeheading() {
+        heading.innerHTML = "JaylenBrown";
+        const elementHide = document.getElementsByClassName("img2");
+      }
+      function secondpic() {
+        heading.innerHTML = "Tacko Fall";
+        const elementHide = document.getElementsByClassName("img1");
+      }
+      function thirdpic() {
+        heading.innerHTML = "Let's Go, Celtics!";
+        const elementShow = document.getElementsByClassName("img1");
+        const elementShow = document.getElementsByClassName("img2");
+      }
+      "img1".click.changeheading();
+      "img2".click.secondpic();
+      "img3".click.thirdpic();
     </script>
   </body>
 </html>
