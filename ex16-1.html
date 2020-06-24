@@ -77,7 +77,13 @@
         } else if (isNaN(age)) {
           alert("please enter a number for age");
           //hide age input
-        } else if (document.getElementById("noAge").checked) {
+        } else {
+          let message;
+          if (myForm["noAge"].checked) {
+            message = "Name:" + userName + "\nGender:" + gender;
+          }
+        }
+        if (document.getElementById("noAge").checked) {
           document.querySelector("age").style.display = "none";
         }
 

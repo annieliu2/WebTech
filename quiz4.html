@@ -50,12 +50,23 @@
         alt="jaylen brown"
         src="images/jaylen-brown.png"
         id="img1"
-        class="img1"
       />
-      <img alt="tacko fall" src="images/tacko-fall.png" class="img2" />
-      <img alt="tiger" src="images/tiger1.jpg" class="img3" />
+      <img alt="tacko fall" src="images/tacko-fall.png" id="img2" />
+      <img alt="tiger" src="images/tiger1.jpg" id="img3" />
     </div>
     <script>
+        const heading = document.querySelector("h1");
+        const img1 = document.querySelector("#img1");
+        const img2 = document.querySelector("#img2");
+        const img3 = document.querySelector("#img3");
+
+        function changeImage() {
+            img1.style.display = "inline";
+            img2.style.display = "none";
+            img3.style.display = "inline"
+            heading.innerText = "Jaylen Brown";
+            heading.style.color = "brown";
+        }
       // first click change heading to jaylen brown
       //chnage font color ot brown
       // make second picture disappear
