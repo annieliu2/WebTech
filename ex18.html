@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex18</title>
+    <style>
+      img {
+        border-width: 10px;
+        border-style: solid;
+        border-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/tiger1.jpg" alt="tiger1" />
+    <p id="description"></p>
+
+    <script>
+      const slides = [
+        "images/tiger1.jpg",
+        "images/tiger2.jpg",
+        "images/tiger3.jpg",
+        "images/tiger4.jpg",
+      ];
+
+      const colors = ["pink", "yellow", "green", "purple"];
+      const textArray = ["tigercap1", "tigercap2", "tigercap3", "tigercap4"];
+
+      let i = 0;
+
+      const image = document.querySelector("img");
+      const description = document.getElementById("description");
+
+      function slideShow() {
+        console.log("running...");
+        if (i === slides.length) {
+          i = 0;
+        }
+        image.src = slides[i];
+        image.style.borderColor = colors[i];
+        console.log(i);
+        i = i + 1;
+
+        setTimeout(slideShow, 1500);
+      }
+
+      document.querySelector("body").onload = slideShow;
+    </script>
+  </body>
+</html>
