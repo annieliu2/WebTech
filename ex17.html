@@ -58,7 +58,13 @@
       <div>
         <label>
           Your magazine selections:<br />
-          <textarea id = "show" name="result" cols="30" rows="4" readonly></textarea>
+          <textarea
+            id="show"
+            name="result"
+            cols="30"
+            rows="4"
+            readonly
+          ></textarea>
         </label>
       </div>
       <div>
@@ -67,29 +73,28 @@
       </div>
     </form>
     <script>
-        function f() {
+      function f() {
         const colors = document.getElementsByName("colors").elements["colors"];
-        
+
         let userChoice;
         for (let i = 0; i < colors.length; i++) {
-            const color = colors[i];
-            if (color.checked) {
-                userChoice = color.value;
-            } 
+          const color = colors[i];
+          if (color.checked) {
+            userChoice = color.value;
+          }
         }
-        
+      }
+      function checkbox() {
+        const checkboxes = document.getElementsByName("mags");
+        const checkboxesChecked = [];
+        for (let i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            chckboxesChecked.push(checkboxes[i].value);
+          }
         }
-        function checkbox() {
-            const checkboxes = document.getElementsByName("mags");
-            const checkboxesChecked = [];
-            for (let i=0; i<checkboxes.length; i++) {
-                if (checkboxes[i].checked) {
-                    chckboxesChecked.push(checkboxes[i].value);
-                }
-            }
-            document.getElementById("show").value = checkboxesChecked;
-        }
-        document.querySelector("#submit").onclick = function () {
+        document.getElementById("show").value = checkboxesChecked;
+      }
+      document.querySelector("#submit").onclick = function () {
         f();
       };
     </script>
