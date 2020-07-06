@@ -56,37 +56,28 @@
     </div>
     <script>
         const heading = document.querySelector("h1");
-        const img1 = document.querySelector("#img1");
-        const img2 = document.querySelector("#img2");
-        const img3 = document.querySelector("#img3");
-
-        function changeImage() {
-            img1.style.display = "inline";
-            img2.style.display = "none";
-            img3.style.display = "inline"
-            heading.innerText = "Jaylen Brown";
-            heading.style.color = "brown";
+        const first = document.getElementById("img1");
+        const second = document.getElementById("img2");
+        const third = document.getElementById("img3");
+        function f() {
+          heading.innerHTML = "Jaylen Brown";
+          heading.style.color = "brown";
+          second.style.display = "none";
         }
-      // first click change heading to jaylen brown
-      //chnage font color ot brown
-      // make second picture disappear
-      const heading = document.querySelector("h1");
-      function changeheading() {
-        heading.innerHTML = "JaylenBrown";
-        const elementHide = document.getElementsByClassName("img2");
-      }
-      function secondpic() {
-        heading.innerHTML = "Tacko Fall";
-        const elementHide = document.getElementsByClassName("img1");
-      }
-      function thirdpic() {
-        heading.innerHTML = "Let's Go, Celtics!";
-        const elementShow = document.getElementsByClassName("img1");
-        const elementShow = document.getElementsByClassName("img2");
-      }
-      "img1".click.changeheading();
-      "img2".click.secondpic();
-      "img3".click.thirdpic();
+        document.getElementById("img1").onclick = f;
+        function n() {
+          heading.innerHTML = "Tacko Fall";
+          heading.style.color = "red";
+          first.style.display = "none";
+        }
+        document.getElementById("img2").onclick = n;
+        function p() {
+          heading.innerHTML = "Let's Go, Celtics!";
+          heading.style.color = "green";
+          first.style.display = "inline";
+          second.style.display = "inline";
+        }
+        document.getElementById("img3").onclick = p;
     </script>
   </body>
 </html>
